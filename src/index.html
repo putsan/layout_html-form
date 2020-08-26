@@ -1,15 +1,117 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="icon" href="https://i.imgur.com/9IvZHDK.png">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+          method="POST" onsubmit="onSubmit()">
+      <fieldset class="contextBlock">
+        <legend>Personal information</legend>
+        <label for="surname" class="inputBlock">
+          Surname:
+          <input type="text" name="gender"
+                 id="surname">
+        </label>
+        <label for="name" class="inputBlock">
+          Name:
+          <input type="text" name="gender"
+                 id="name">
+        </label>
+        <label for="age" class="inputBlock">
+          How old are You?
+          <input type="number" id="age"
+                 value="12" maxlength="3"
+                 min="6" max="110">
+        </label>
+        <label for="birthday" class="inputBlock">
+          Full date of birth:
+          <input type="date" id="birthday">
+        </label>
+        <label for="readTerms" class="inputBlock">
+          I accept the term of the agreement
+          <input type="checkbox" id="readTerms"
+                 required>
+        </label>
+      </fieldset>
+
+      <fieldset class="contextBlock">
+        <legend>Registration</legend>
+        <label for="email" class="inputBlock">
+          E-mail:
+          <input type="email" id="email"
+                 placeholder="email@example.com">
+        </label>
+
+        <label for="pass" class="inputBlock">
+          Password:
+          <input type="password" id="pass"
+          minlength="7">
+        </label>
+      </fieldset>
+
+      <fieldset class="contextBlock">
+        <legend>An interesting fact about yoy!</legend>
+        <label for="catYes" class="inputBlock">
+          Do yoy love cats?
+          <input type="radio" name="catsAnswer"
+                 id="catYes">
+          <span>Yes</span>
+          <input type="radio" name="catsAnswer"
+                 id="catNo">
+          <span>No</span>
+        </label>
+        <label for="favColor" class="inputBlock">
+          What is your favorite color?
+          <input type="color" id="favColor">
+        </label>
+        <label for="goToBed" class="inputBlock">
+          What time do you go to bed?
+          <input type="time" id="goToBed"
+                 step="1">
+        </label>
+        <label for="favBrand" class="inputBlock">
+          What are you favorite brand of cars?
+          <select name="" id="favBrand"
+                  multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+        <label for="rateRange" class="inputBlock">
+          How do you rate our work?
+          <input type="range" min="0"
+                 max="10" value="0"
+                 id="rateRange">
+        </label>
+      </fieldset>
+
+      <fieldset class="contextBlock">
+        <legend>Additional info:</legend>
+        <label for="userComment" class="inputBlock">
+          Comments:
+          <textarea name="moreInfo" id="userComment"
+                    cols="0" rows="0">
+          </textarea>
+        </label>
+        <label for="userRecomend" class="inputBlock">
+          Would you recommend us?
+          <select name="moreInfo" id="userRecomend">
+            <option value="yes">yes</option>
+            <option value="yes">yes</option>
+          </select>
+        </label>
+      </fieldset>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>

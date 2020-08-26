@@ -10,82 +10,104 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-          method="POST" onsubmit="onSubmit()">
-      <fieldset class="contextBlock">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      onsubmit="onSubmit()">
+      <fieldset class="context-block">
         <legend>Personal information</legend>
-        <label for="surname" class="inputBlock">
+        <label for="surname" class="input-block">
           Surname:
-          <input type="text" name="gender"
-                 id="surname">
+          <input
+            type="text"
+            name="gender"
+            id="surname">
         </label>
-        <label for="name" class="inputBlock">
+        <label for="name" class="input-block">
           Name:
           <input type="text" name="gender"
                  id="name">
         </label>
-        <label for="age" class="inputBlock">
+        <label for="age" class="input-block">
           How old are You?
-          <input type="number" id="age"
-                 value="12" maxlength="3"
-                 min="6" max="110">
+          <input
+            type="number"
+            id="age"
+            value="12"
+            maxlength="3"
+            min="6"
+            max="110">
         </label>
-        <label for="birthday" class="inputBlock">
+        <label for="birthday" class="input-block">
           Full date of birth:
           <input type="date" id="birthday">
         </label>
-        <label for="readTerms" class="inputBlock">
+        <label for="readTerms" class="input-block">
           I accept the term of the agreement
-          <input type="checkbox" id="readTerms"
-                 required>
+          <input
+            type="checkbox"
+            id="readTerms"
+            required>
         </label>
       </fieldset>
 
-      <fieldset class="contextBlock">
+      <fieldset class="context-block">
         <legend>Registration</legend>
-        <label for="email" class="inputBlock">
+        <label for="email" class="input-block">
           E-mail:
-          <input type="email" id="email"
-                 placeholder="email@example.com">
+          <input
+            type="email"
+            id="email"
+            placeholder="email@example.com">
         </label>
 
-        <label for="pass" class="inputBlock">
+        <label for="pass" class="input-block">
           Password:
-          <input type="password" id="pass"
-          minlength="7">
+          <input
+            type="password"
+            id="pass"
+            minlength="7">
         </label>
       </fieldset>
 
-      <fieldset class="contextBlock">
+      <fieldset class="context-block">
         <legend>An interesting fact about yoy!</legend>
-        <label for="catYes" class="inputBlock">
+        <label for="catYes" class="input-block">
           Do yoy love cats?
-          <input type="radio" name="catsAnswer"
-                 id="catYes">
+          <input
+            type="radio"
+            name="catsAnswer"
+            id="catYes">
           <span>Yes</span>
-          <input type="radio" name="catsAnswer"
-                 id="catNo">
+          <input
+            type="radio"
+            name="catsAnswer"
+            id="catNo">
           <span>No</span>
         </label>
-        <label for="favColor" class="inputBlock">
+        <label for="favColor" class="input-block">
           What is your favorite color?
           <input type="color" id="favColor">
         </label>
-        <label for="goToBed" class="inputBlock">
+        <label for="goToBed" class="input-block">
           What time do you go to bed?
-          <input type="time" id="goToBed"
-                 step="1">
+          <input
+            type="time"
+            id="goToBed"
+            step="1">
         </label>
-        <label for="favBrand" class="inputBlock">
+        <label for="favBrand" class="input-block">
           What are you favorite brand of cars?
-          <select name="" id="favBrand"
-                  multiple>
+          <select
+            name="carsp-brand"
+            id="favBrand"
+            multiple>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
         </label>
-        <label for="rateRange" class="inputBlock">
+        <label for="rateRange" class="input-block">
           How do you rate our work?
           <input type="range" min="0"
                  max="10" value="0"
@@ -93,15 +115,18 @@
         </label>
       </fieldset>
 
-      <fieldset class="contextBlock">
+      <fieldset class="context-block">
         <legend>Additional info:</legend>
-        <label for="userComment" class="inputBlock">
+        <label for="userComment" class="input-block">
           Comments:
-          <textarea name="moreInfo" id="userComment"
-                    cols="0" rows="0">
+          <textarea
+            name="moreInfo"
+            id="userComment"
+            cols="0"
+            rows="0">
           </textarea>
         </label>
-        <label for="userRecomend" class="inputBlock">
+        <label for="userRecomend" class="input-block">
           Would you recommend us?
           <select name="moreInfo" id="userRecomend">
             <option value="yes">yes</option>

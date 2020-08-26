@@ -1,16 +1,16 @@
-.inputBlock {
+.input-block {
   display: block;
   margin: 10px 0 0;
 }
 
-.inputBlock:first-of-type {
+.input-block:first-of-type {
   margin: 0;
 }
 
-.contextBlock {
+.context-block {
   margin-top: 20px;
 }
 
-.contextBlock:first-child {
+.context-block:first-child {
   margin-top: 0;
 }
